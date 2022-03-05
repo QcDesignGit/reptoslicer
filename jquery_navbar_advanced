@@ -1,0 +1,14 @@
+jQuery('.navbar-collapse a').on('click', function() {
+
+	const navbarCollapse = jQuery(this).closest('.navbar-collapse');
+	const navbarToggler = jQuery('.navbar-toggler');
+	
+	if(navbarCollapse.hasClass('show')) {
+		navbarCollapse.removeClass('show');
+	}
+	
+	if(!navbarToggler.hasClass('collapsed')) {
+		navbarToggler.addClass('collapsed');
+	}
+	
+});

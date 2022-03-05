@@ -1,0 +1,3 @@
+jQuery('.navbar-collapse a').on('click', function() {
+	jQuery(this).closest('.navbar-collapse').removeClass('show');
+});
